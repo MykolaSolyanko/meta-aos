@@ -1,12 +1,12 @@
 DESCRIPTION = "AOS Message Proxy"
 
-GO_IMPORT = "github.com/aoscloud/aos_message_proxy"
+GO_IMPORT = "github.com/MykolaSolyanko/aos_message_proxy"
 
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=86d3f3a95c324c9479bd8986968f4327"
 
-BRANCH = "main"
-SRCREV = "6710f5ffb5a7df59d8d40c9901baeee06bda78f9"
+BRANCH = "fix"
+SRCREV = "75be4014841fcacf08bac55ee0e04b392f3bbd6d"
 
 SRC_URI = "git://${GO_IMPORT}.git;branch=${BRANCH};protocol=https"
 
