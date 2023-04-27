@@ -1,13 +1,13 @@
-DESCRIPTION = "DNS name CNI plugin"
+DESCRIPTION = "AOS fierwall CNI plugin"
 
-GO_IMPORT = "github.com/aoscloud/aos_cni_dns"
+GO_IMPORT = "github.com/aoscloud/aos_cni_vlan"
 
 LICENSE = "Apache-2.0"
-LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57"
+LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=86d3f3a95c324c9479bd8986968f4327"
 
-BRANCH = "add_remote_server"
-SRCREV = "695f504d006069f9583d8e580cc892615d60bd91"
-SRC_URI = "git://github.com/MykolaSolyanko/aos_cni_dns.git;branch=${BRANCH};protocol=https"
+BRANCH = "vlan"
+SRCREV = "37f2ecac92f367ecaa315efc70db71e6aed4d383"
+SRC_URI = "git://github.com/MykolaSolyanko/aos_cni_vlan.git;branch=${BRANCH};protocol=https"
 
 inherit go
 inherit goarch
@@ -18,7 +18,7 @@ GO_LDFLAGS += '-ldflags="-X github.com/containernetworking/plugins/pkg/utils/bui
 FILES_${PN} = "${libexecdir}/cni"
 
 RDEPENDS_${PN} += "\
-    dnsmasq \
+    iptables \
 "
 
 # WA to support go install for v 1.18
@@ -33,5 +33,5 @@ do_install() {
     localbindir="${libexecdir}/cni"
 
     install -d ${D}${localbindir}
-    install -m 755 ${B}/${GO_BUILD_BINDIR}/dnsname ${D}${localbindir}
+    install -m 755 ${B}/${GO_BUILD_BINDIR}/aos-vlan ${D}${localbindir}
 }
