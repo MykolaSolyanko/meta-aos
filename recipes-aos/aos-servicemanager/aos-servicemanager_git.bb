@@ -5,9 +5,9 @@ GO_IMPORT = "github.com/aoscloud/aos_servicemanager"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57"
 
-BRANCH = "develop"
-SRCREV = "${AUTOREV}"
-SRC_URI = "git://${GO_IMPORT}.git;branch=${BRANCH};protocol=https"
+BRANCH = "allow_ping"
+SRCREV = "07895bc730ba02bf49f400f7bf24a2f901445ef1"
+SRC_URI = "git://github.com/MykolaSolyanko/aos_servicemanager.git;branch=allow_ping;protocol=https"
 
 SRC_URI += " \
     file://aos_servicemanager.cfg \
