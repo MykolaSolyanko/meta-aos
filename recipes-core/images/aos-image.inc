@@ -68,7 +68,6 @@ IMAGE_INSTALL:append = " \
         packagegroup-selinux-minimal \
         packagegroup-selinux-policycoreutils \
         selinux-autorelabel \
-        aos-selinux-autorelabel \
         ', '', d)} \
 "
 
