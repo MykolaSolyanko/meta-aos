@@ -6,9 +6,9 @@ LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57"
 
 BRANCH = "main"
-SRCREV = "1e49a5a44beb5c8270a7b8a957a7e2231745d2c1"
+SRCREV = "f73c8f7acbf53a236511a1f14991f33e4acb299c"
 
-SRC_URI = "git://${GO_IMPORT}.git;branch=${BRANCH};protocol=https"
+SRC_URI = "git://github.com/MykolaSolyanko/aos_iamanager.git;branch=main;protocol=https"
 
 SRC_URI += " \
     file://aos_iamanager.cfg \
