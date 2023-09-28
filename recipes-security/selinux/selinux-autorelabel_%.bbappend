@@ -10,6 +10,8 @@ do_install:append() {
     if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
        rm -f ${D}/.autorelabel
     fi
+
+    sed -i '/\/sbin\/reboot/i \    rm -rf /var/.nvme-work' ${D}${bindir}/${SELINUX_SCRIPT_SRC}.sh
 }
 
 pkg_postinst:${PN}() {

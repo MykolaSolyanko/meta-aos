@@ -9,12 +9,15 @@ SELinux was not enabled. \
 
 include recipes-security/refpolicy/refpolicy_common.inc
 
+DEFAULT_ENFORCING = "permissive"
+
 PV = "2_20220106+git${SRCPV}"
 
-BRANCH = "develop"
+BRANCH = "gen4"
 SRCREV = "${AUTOREV}"
 
-SRC_URI = "git://github.com/aoscloud/refpolicy.git;branch=${BRANCH};protocol=https;name=refpolicy;destsuffix=refpolicy"
+
+SRC_URI = "git://github.com/MykolaSolyanko/refpolicy.git;branch=${BRANCH};protocol=https;name=refpolicy;destsuffix=refpolicy"
 
 SRC_URI += " \
     file://customizable_types \
