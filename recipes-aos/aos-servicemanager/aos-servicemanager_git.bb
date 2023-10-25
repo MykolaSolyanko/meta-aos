@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=3b83ef96387f14655fc854dd
 BRANCH = "develop"
 SRCREV = "${AUTOREV}"
 
-SRC_URI = "git://${GO_IMPORT}.git;branch=${BRANCH};protocol=https"
+SRC_URI = "git://github.com/MykolaSolyanko/aos_servicemanager.git;branch=clean_networkmanager;protocol=https"
 
 SRC_URI += " \
     file://aos_servicemanager.cfg \
