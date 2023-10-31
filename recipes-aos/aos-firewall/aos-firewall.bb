@@ -6,9 +6,9 @@ LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57"
 
 BRANCH = "main"
-SRCREV = "2c023063da228dd12a642e5da0ac552c098b9b55"
+SRCREV = "8c2da14a0fba12544349998f00f30d198a60ee19"
 
-SRC_URI = "git://${GO_IMPORT}.git;branch=${BRANCH};protocol=https"
+SRC_URI = "git://github.com/MykolaSolyanko/aos_cni_firewall.git;branch=refactor_firewall;protocol=https"
 
 inherit go
 inherit goarch

@@ -6,9 +6,9 @@ LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57"
 
 BRANCH = "main"
-SRCREV = "1c37bd19338de9450b35e522c4cf3cbd5be5b48a"
+SRCREV = "74b690384ff85308eb578143e8b1756ee152b359"
 
-SRC_URI = "git://${GO_IMPORT}.git;branch=${BRANCH};protocol=https"
+SRC_URI = "git://github.com/MykolaSolyanko/aos_servicemanager.git;branch=network_start_stop;protocol=https"
 
 SRC_URI += " \
     file://aos_servicemanager.cfg \

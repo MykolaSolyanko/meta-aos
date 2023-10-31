@@ -6,9 +6,9 @@ LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57"
 
 BRANCH = "main"
-SRCREV = "dcbf79ec93c43e4f83306c7350a32a0a2dcbb515"
+SRCREV = "4219316fef668afb8a40aae4560a667bf196b77f"
 
-SRC_URI = "git://${GO_IMPORT}.git;branch=${BRANCH};protocol=https"
+SRC_URI = "git://github.com/MykolaSolyanko/aos_communicationmanager.git;branch=network_start_stop;protocol=https"
 
 SRC_URI += " \
     file://aos_communicationmanager.cfg \
