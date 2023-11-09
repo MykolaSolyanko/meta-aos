@@ -11,10 +11,10 @@ include recipes-security/refpolicy/refpolicy_common.inc
 
 PV = "2_20220106+git${SRCPV}"
 
-BRANCH = "master"
-SRCREV = "a070600428f7420a3053f311c34aef01cc636bff"
+BRANCH = "quota"
+SRCREV = "3a8d5e405479fbd4696637736221b43e27a072f2"
 
-SRC_URI = "git://github.com/aoscloud/refpolicy.git;branch=${BRANCH};protocol=https;name=refpolicy;destsuffix=refpolicy"
+SRC_URI = "git://github.com/MykolaSolyanko/refpolicy.git;branch=${BRANCH};protocol=https;name=refpolicy;destsuffix=refpolicy"
 
 SRC_URI += " \
     file://customizable_types \
