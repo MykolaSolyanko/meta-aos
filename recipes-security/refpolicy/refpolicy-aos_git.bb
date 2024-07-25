@@ -11,10 +11,11 @@ include recipes-security/refpolicy/refpolicy_common.inc
 
 PV = "2_20220106+git${SRCPV}"
 
-BRANCH = "develop"
-SRCREV = "${AUTOREV}"
+BRANCH = "container"
+# SRCREV = "${AUTOREV}"
+SRCREV = "4228e46a08a96a4f4432f7ddb34f75c5e013179a"
 
-SRC_URI = "git://github.com/aosedge/refpolicy.git;branch=${BRANCH};protocol=https;name=refpolicy;destsuffix=refpolicy"
+SRC_URI = "git://github.com/MykolaSolyanko/refpolicy.git;branch=${BRANCH};protocol=https;name=refpolicy;destsuffix=refpolicy"
 
 SRC_URI += " \
     file://customizable_types \
